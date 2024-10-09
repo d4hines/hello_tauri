@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello Tauri!</title>
-    <style>
-        body {
-            /* Add a nice colorscheme to our page and text */
-            background-color: #222831;
-            color: #ececec;
-
-            /* Make the body tag the exact size of the window */
-            margin: 0;
-            height: 100vh;
-            width: 100vw;
-
-            /* Vertically and horizontally center children of the body tag */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-</head>
-<body>
-<h1>Hello, Tauri!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // access the pre-bundled global API functions
+      function addFoo() {
+        const fooDiv = document.createElement("div");
+        fooDiv.id = "foo";
+        fooDiv.textContent = "foo";
+        document.body.appendChild(fooDiv);
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="header">Welcome from Tauri!!!!</h1>
+    <button onclick="addFoo()">Click Me</button>
+  </body>
 </html>
